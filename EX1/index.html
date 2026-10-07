@@ -1,0 +1,58 @@
+<!-- Write your code here -->
+<!DOCTYPE html>
+
+<head>
+    <title>Ecxercise number 1</title>
+</head>
+<html>
+
+<body>
+    <h1>Heap vs stack</h1>
+    <br>
+    <p>In c++, <a href="https://stackoverflow.com/questions/5836309/stack-memory-vs-heap-memory"
+            target="_blank">stack</a>
+        is a copile time block of memory that the compiler as the ram to allocate
+        requiment chunk of memory while the heap work differently.
+        The <a href="https://www.geeksforgeeks.org/operating-systems/what-is-a-memory-heap/" target="_blank">heap</a>
+        is a dynamic allocation that during runtime the code ask the OS to allocate available block of memory
+        and return its address to a stack pointer to hold, this way making new size like array be flexible for
+        when you only need what you use instead of asking for something more than what you need at runtime.
+    </p>
+    <br>
+    <h2>Heap dangers</h2>
+    <br>
+    <p>though, heap allocation can be good but also very dangerous if you do not know whaat you are doing
+        othewise you will blow your foot cleans off such as:
+    <ul>
+        <li>every allocation(new) must be manually deallocate right after you're dont using</li>
+        <li>some stack pointer can be out of scope.
+            <ul type='square'>
+                <li>when you llocate a memory in for example, function and init a pointer to hold that heap memory and
+                    when
+                    the function goes out of scope (reach the end of }) so its var that is local in that fuction, thus
+                    losing access to
+                    the heap making that block of memory lost in the heap for the entire time causing leak.
+                </li>
+            </ul>
+        </li>
+        <li>double delete can also causes problem</li>
+        <li>Can be slow at the time because the program have to ask the OS to return a block of memory everytime you
+            made a call
+            while the stack is faster because the copiler do all the calculations.
+        </li>
+    </ul>
+    </p>
+    <br>
+    <p>For further understanding <a href="https://stackoverflow.com/questions/5836309/stack-memory-vs-heap-memory"
+            target="_blank">
+            stack vs heap </a></p>
+    <br>
+    <h2>Conclusion</h2>
+    <p>
+        heap can be good if you know what you are doing, if not then it would be nigtmares of memory wasting.
+    </p>
+    <p>If you ever need help, <a href="bunhak.hor@student.cadt.edu.kh" target="_blank"">here's my school email.</a></p>
+
+</body>
+
+</html>
